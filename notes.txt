@@ -1,0 +1,12 @@
+														LESSON 1
+=======================================================================================================================================
+
+1>>	AppcompatActivity is subclass of android which provide a lot of feature to ensure the backward Compatibility!
+
+2>> MainActivity is subclass of context so i can interact with OS!
+
+3>> lateinit keyboard is used to make understand the compiler that we never do any operation without initializing varible!
+
+4>> Use vectorSupport library to enable the backward compatilbility so that if use vector drawable below SDK 21 don't convert vector 	 drawable onto png and increase the apk(Android Application package ) size!
+
+5>>	
