@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="hello_mr_keats">Mr. Keats</string>
+    <string name="mr_keats_s_photo">Mr Keats\'s Photo</string>
+
+    <string name="bio">My Name is Mr. Keats!\nI like to Solve Real World Challenging problem.\nCoding is my passion,
+                            \nI like to break and  build the stuff via coding!\nApart from that, I like to travel,specially long trips.
+                            \nMy favourite Cartoon is Ben Ten and Joker movie is one of best movie i have seen so far!
+                            well I also like to play cricket and badminton as outdoor game!\nI also believe in spirituality!
+                            I love  wandering at a place where land are full of trees and surrounded by mountains!
+
+
+    </string>
+    <string name="what_is_your_nick_name">what is your nick name?</string>
+    <string name="done">Done</string>
+</resources>

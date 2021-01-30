@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="myname"
+            type="com.keatssalazar.aboutme.MyName" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/boundary"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/boundary"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_keats"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/boundary"
+                android:contentDescription="@string/mr_keats_s_photo"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/k" />
+
+
+            <TextView
+                android:id="@+id/name_text"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{myname.name}"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/nickname_editText"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:autofillHints="todo"
+            android:background="@drawable/boundary"
+            android:hint="@string/what_is_your_nick_name"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/texColor" />
+
+        <Button
+            android:id="@+id/done_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/small_margin"
+            android:fontFamily="@font/roboto"
+            android:text="@string/done" />
+
+        <TextView
+            android:id="@+id/nickname_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/boundary"
+            android:padding="5dp"
+            android:text="@{myname.NICKNAME}"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/bio_scroll"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/boundary">
+
+            <TextView
+                android:id="@+id/bio_text"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:lineSpacingMultiplier="1.0"
+                android:text="@string/bio" />
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</layout>
